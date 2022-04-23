@@ -5,6 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
         <!-- link -->
         <link rel="stylesheet" href="./css/style.css" />
     </head>
@@ -28,7 +35,7 @@
                         студия изучения датского языка
                     </p>
                 </a>
-                <!-- меню -->
+
                 <!-- nav.navigation -->
                 <nav class="navigation">
                     <!-- ul.header-menu>li.header-menu__item*7>a.header-menu__link -->
@@ -66,7 +73,7 @@
                     </ul>
                 </nav>
 
-                <!-- контакты (мессенджеры) -->
+
                 <!-- ul.header-socials>li.header-socials__item*3>a.header-socials__link>img.header-socials__img -->
                 <ul class="header-socials">
                     <li class="header-socials__item">
@@ -104,7 +111,7 @@
                     </li>
                 </ul>
 
-                <!-- переключатель языков -->
+
                 <!-- ul.header-langs>li.header-langs__item*3>a.header-langs__link -->
                 <ul class="header-langs">
                     <li class="header-langs__item">
@@ -146,7 +153,11 @@
                         </p>
 
                         <!-- a.btn.btn--yellow -->
-                        <a href="#" class="btn btn--yellow">
+                        <a
+                            href="#"
+                            class="btn btn--yellow"
+                            id="orderFreeLesson"
+                        >
                             Записаться на пробный ONLINE урок
                         </a>
                     </div>
@@ -272,9 +283,198 @@
                     </div>
                 </div>
             </section>
+
+            <!-- section.services.section--w-title-line -->
+            <section class="services section--w-title-line">
+                <h2 class="section-title">
+                    Какие услуги <br />
+                    предлагает студия
+                </h2>
+
+                <!-- .container -->
+                <div class="container">
+                    <!-- ul.services-list>li.services-item.service*3>(h3.service-title+p.service-description+img.service-icon+a.service-read-more) -->
+
+                    <!-- ul.services-list -->
+                    <!-- li.services-item.service*3 -->
+                    <!-- h3.service-title -->
+                    <!-- p.service-description -->
+                    <!-- img.service-icon -->
+                    <!-- a.service-read-more.btn.btn--red -->
+
+                    <ul class="services-list">
+                        <li class="services-item service">
+                            <h3 class="service-title">
+                                АВТОРСКИЕ КУРСЫ ПО ПРОИЗНОШЕНИЮ
+                            </h3>
+
+                            <img
+                                src="./images/service-icon-1.png"
+                                alt=""
+                                class="service-icon"
+                                width="84"
+                                height="84"
+                            />
+                            <a href="#" class="service-read-more btn btn--red">
+                                ПОДРОБНЕЕ
+                            </a>
+                        </li>
+                        <li class="services-item service">
+                            <h3 class="service-title">
+                                индивидуальные занятия:
+                            </h3>
+                            <p class="service-description">
+                                произношение, подготовка к экзаменам, датский
+                                для начинающих и ваши индивидуальные языковые
+                                потребности
+                            </p>
+                            <img
+                                src="./images/service-icon-2.png"
+                                alt=""
+                                class="service-icon"
+                                width="84"
+                                height="84"
+                            />
+                            <a href="#" class="service-read-more btn btn--red">
+                                ПОДРОБНЕЕ
+                            </a>
+                        </li>
+                        <li class="services-item service">
+                            <h3 class="service-title">занятия в группах:</h3>
+                            <p class="service-description">
+                                датский с нуля, разговорный клуб, постановка
+                                произношения
+                            </p>
+                            <img
+                                src="./images/service-icon-3.png"
+                                alt="#"
+                                class="service-icon"
+                                width="84"
+                                height="84"
+                            />
+                            <a href="" class="service-read-more btn btn--red">
+                                ПОДРОБНЕЕ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- section.how-to.section--w-title-line -->
+            <section class="how-to section--w-title-line">
+                <h2 class="section-title">
+                    Сделайте первый шаг <br />
+                    к изучению датского языка
+                </h2>
+
+                <div class="container how-to__container">
+                    <!-- ul.how-to__steps -->
+                    <ul class="how-to__steps">
+                        <!-- li.how-to__step*4 -->
+                        <li class="how-to__step">
+                            Выбор подходящего формата обучения
+                        </li>
+                        <li class="how-to__step">подача заявки на обучение</li>
+                        <li class="how-to__step">
+                            знакомство по телефону, назначение урока
+                        </li>
+                        <li class="how-to__step">
+                            ваше первое пробное занятие
+                        </li>
+                    </ul>
+
+                    <a href="#" class="how-to__form">
+                        анкета для определения уровня
+                    </a>
+                </div>
+            </section>
+
+            <section class="check-form section--w-title-line">
+                <h2 class="section-title">Узнать расписание</h2>
+
+                <div class="container">
+                    <form class="cForm">
+                        <p class="cform-text">
+                            Перед оплатой курса узнайте, есть ли места в группе,
+                            не возникло ли переноса или отмены занятий
+                        </p>
+
+                        <label class="cform-label">
+                            Ваше имя*
+                            <input type="text" class="cform-element" required />
+                        </label>
+
+                        <label class="cform-label">
+                            Ваш e-mail*
+                            <input
+                                type="email"
+                                class="cform-element"
+                                required
+                            />
+                        </label>
+
+                        <label class="cform-label">
+                            Ваш телефон*
+                            <input type="tel" class="cform-element" required />
+                        </label>
+
+                        <label class="cform-label">
+                            Ваш Skype
+                            <input type="text" class="cform-element" />
+                        </label>
+
+                        <p class="cform-desc">
+                            * Поля, отмеченные звездочкой, являются
+                            обязательными для заполнения
+                        </p>
+                        <p class="cform-desc">
+                            Нажимая кнопку, вы даете согласие на обработку своих
+                            персональных данных
+                        </p>
+
+                        <input
+                            class="btn btn--yellow cform-submit"
+                            type="submit"
+                            value="отправить"
+                        />
+                    </form>
+                </div>
+            </section>
         </main>
 
         <!-- footer.page-footer -->
-        <footer class="page-footer"></footer>
+        <footer class="page-footer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.692580247599!2d30.59078611592288!3d50.42819909684874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57deccaada1%3A0xa5e7cf7c9f8ff18b!2sDAN.IT!5e0!3m2!1sru!2sua!4v1650705498766!5m2!1sru!2sua"
+                class="map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="pop-up">
+                <form class="pop-up__form">
+                    <h2 class="pop-up__title">Запишись на пробный урок</h2>
+                    <label class="cform-label pop-up__label">
+                        Ваше имя*
+                        <input type="text" class="cform-element" required />
+                    </label>
+                    <label class="cform-label pop-up__label">
+                        Ваш телефон*
+                        <input type="tel" class="cform-element" required />
+                    </label>
+
+                    <input
+                        class="btn btn--yellow"
+                        type="submit"
+                        value="отправить"
+                    />
+                </form>
+                <button class="pop-up__close">&times;</button>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>
